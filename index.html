@@ -15,32 +15,243 @@
       --card: #ffffff;
       --border: #e2e8f0;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.8;
     }
+
     header {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
       color: white;
       padding: 44px 24px 36px;
       text-align: center;
     }
+
     header .logo {
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: -0.5px;
       margin-bottom: 6px;
     }
+
     header .tagline {
       font-size: 1rem;
       opacity: 0.9;
       margin-bottom: 16px;
     }
+
     header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.22);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+
+    .meta {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin: 10px 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    li { margin-bottom: 6px; }
+
+    .alert-box {
+      background: #fef2f2;
+      border-left: 4px solid var(--danger);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.9rem;
+      color: #991b1b;
+    }
+
+    .info-box {
+      background: #f0fdfc;
+      border-left: 4px solid var(--primary-dark);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.9rem;
+      color: #0f766e;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #f0fdfc, #e6fffd);
+      border: 1px solid var(--primary);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-card a {
+      color: var(--primary-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌊 SiniCrita</div>
+  <div class="tagline">Cerita Anonim – Komitmen Keselamatan dan Perlindungan Anak</div>
+  <div class="badge">Standar Keselamatan Anak (CSAE / CSAM Policy)</div>
+</header>
+
+<main>
+
+  <div class="meta">
+    <span>📅 Tanggal Efektif: 14 November 2026</span>
+    <span>🛡️ Kepatuhan: Google Play Child Safety Standards</span>
+  </div>
+
+  <!-- 1. Kebijakan Nol Toleransi -->
+  <section>
+    <h2><span class="icon">🚫</span> 1. Kebijakan Nol Toleransi terhadap CSAE / CSAM</h2>
+    <p>
+      <strong>SiniCrita</strong> memiliki kebijakan <strong>nol toleransi (zero tolerance)</strong> terhadap segala bentuk Pelecehan Seksual dan Eksploitasi Anak (<em>Child Sexual Abuse and Exploitation - CSAE</em>) serta Materi Pelecehan Seksual Anak (<em>Child Sexual Abuse Material - CSAM</em>).
+    </p>
+    <div class="alert-box">
+      Segala tindakan yang memproduksi, mendistribusikan, memfasilitasi, mempromosikan, atau mengakses konten eksploitasi dan pelecehan anak, termasuk perlakuan grooming atau ajakan seksual terhadap anak di bawah umur dilarang keras dan akan segera ditindaklanjuti secara hukum.
+    </div>
+  </section>
+
+  <!-- 2. Batasan Usia -->
+  <section>
+    <h2><span class="icon">🔞</span> 2. Batasan Usia Pengguna</h2>
+    <p>
+      Aplikasi SiniCrita dirancang untuk pengguna berusia <strong>17 tahun ke atas</strong>. Kami tidak mengizinkan anak di bawah umur untuk menggunakan layanan ini. Jika kami mendapati akun milik pengguna di bawah usia yang ditentukan, akun tersebut akan segera dinonaktifkan.
+    </p>
+  </section>
+
+  <!-- 3. Mekanisme Pelaporan di Dalam Aplikasi -->
+  <section>
+    <h2><span class="icon">🚩</span> 3. Mekanisme Pelaporan di Dalam Aplikasi (In-App Reporting)</h2>
+    <p>
+      SiniCrita menyediakan fitur pelaporan langsung (<em>in-app report</em>) di setiap titik interaksi pengguna:
+    </p>
+    <ul>
+      <li><strong>Postingan / Board:</strong> Tombol laporan pada setiap postingan cerita.</li>
+      <li><strong>Ruang Pesan / Chat Room:</strong> Tombol opsi laporan pada percakapan untuk melaporkan pesan mencurigakan atau berbahaya.</li>
+      <li><strong>Sesi Panggilan Suara (Call / Random Match):</strong> Tombol pelaporan pengguna saat atau sesudah sesi berlangsung.</li>
+    </ul>
+    <p>
+      Laporan yang masuk akan langsung diprioritaskan oleh tim moderasi kami untuk penindakan darurat, pemblokiran akun permanen, dan penghapusan konten berbahaya.
+    </p>
+  </section>
+
+  <!-- 4. Kerjasama dengan Penegak Hukum dan Otoritas -->
+  <section>
+    <h2><span class="icon">⚖️</span> 4. Kerjasama dengan Penegak Hukum & Otoritas Nasional/Internasional</h2>
+    <p>
+      Sesuai kewajiban hukum yang berlaku, jika ditemukan indikasi materi CSAM atau tindakan eksploitasi anak:
+    </p>
+    <ol>
+      <li>Akun pelaku akan langsung ditangguhkan secara permanen dan seluruh akses diputus seketika.</li>
+      <li>Bukti digital terkait akan diamankan sesuai prosedur hukum forensik.</li>
+      <li>Kami akan secara proaktif melaporkan insiden tersebut ke <strong>National Center for Missing & Exploited Children (NCMEC)</strong> dan/atau pihak kepolisian dan otoritas penegak hukum regional/nasional terkait di Indonesia (seperti Bareskrim Polri / Kominfo).</li>
+    </ol>
+  </section>
+
+  <!-- 5. Kontak Penanggung Jawab (POC) -->
+  <section>
+    <h2><span class="icon">📬</span> 5. Kontak Khusus Keselamatan Anak (Point of Contact)</h2>
+    <p>
+      Kami menunjuk kontak penanggung jawab resmi yang siap menanggapi pertanyaan, laporan darurat, dan koordinasi kepatuhan kebijakan perlindungan anak:
+    </p>
+    <div class="contact-card">
+      <p style="font-weight: 700; font-size: 1.05rem; margin-bottom: 6px; color: var(--text);">Petugas Keselamatan Anak (Child Safety POC)</p>
+      <p style="margin-bottom: 12px; color: var(--muted);">SiniCrita Team</p>
+      <p>📧 Email Kontak: <a href="mailto:jamasguitarist@gmail.com">jamasguitarist@gmail.com</a></p>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 10px;">
+        Email alternatif / support: <a href="mailto:sinicrita.app@gmail.com">sinicrita.app@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 SiniCrita. Seluruh hak cipta dilindungi undang-undang.
+</footer>
+
+</body>
+</html>
